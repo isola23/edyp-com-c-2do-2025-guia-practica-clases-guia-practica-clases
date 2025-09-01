@@ -8,7 +8,7 @@ Dada la siguiente clase:
 
 ```python
 class Camion:
-    def __init__(self, marca, modelo):
+    def __init__(self, patente,marca,carga,anio):
         self.patente = patente
         self.marca = marca
         self.carga = carga
@@ -26,7 +26,7 @@ furgon2 = furgon1
 furgon3 = Camion("DEF456", "Volvo", 2000, 2021)
 furgon4 = Camion("ABC123", "Mercedes", 1000, 2020)
 
-print(furgon1 == furgon2)
+print(furgon1 == furgon2) devuelve false 
 print(furgon1 is furgon2)
 print(furgon3 == furgon4)
 print(furgon3 is furgon4)
