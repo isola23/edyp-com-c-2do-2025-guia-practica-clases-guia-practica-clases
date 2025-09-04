@@ -93,10 +93,10 @@ class Camion:
     def setter_carga(self,carga):
         self.carga=carga
     
-furgon1 = Camion("ABC123", "Mercedes", 1000, 2020)
-furgon2 = furgon1
-furgon3 = Camion("DEF456", "Volvo", 2000, 2021)
-furgon4 = Camion("ABC123", "Mercedes", 1000, 2020)
+#furgon1 = Camion("ABC123", "Mercedes", 1000, 2020)
+#furgon2 = furgon1
+#furgon3 = Camion("DEF456", "Volvo", 2000, 2021)
+#furgon4 = Camion("ABC123", "Mercedes", 1000, 2020)
 
 #f 
 def registrar_camion():
@@ -133,8 +133,16 @@ def marca_mas_registrada():
     print("La marca más registrada es:", mas[0], "con", mas[1], "camiones")
     return mas[0]
         
-def main():
-    registrar_camion()
-    modificar_carga()
-    camiones_registrados()
-    marca_mas_registrada()
+while True:
+    a=input("Ingrese 1 para registrar un camion, 2 para modificar la carga, 3 para ver los camiones registrados, 4 para ver la marca mas registrada y 5 para salir: ")
+    if a=="1":
+        registrar_camion()
+    elif a=="2":
+        modificar_carga()
+    elif a=="3":
+        camiones_registrados()
+    elif a=="4":
+        marca_mas_registrada()
+    elif a=="5":
+        break
+    
